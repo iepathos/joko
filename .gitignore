@@ -1,2 +1,4 @@
 models/
+samples/
+checkpoint/
 reddit_jokes.json

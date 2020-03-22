@@ -21,9 +21,10 @@ def remove_empty_lines(filename):
 
 file_name = "reddit_jokes.txt"
 if not os.path.isfile(file_name):
-    url = "https://github.com/taivop/joke-dataset/raw/master/reddit_jokes.json"
-    cmd = ['wget', url]
-    subprocess.call(cmd)
+    if not os.path.exists('reddit_jokes.json'):
+        url = "https://github.com/taivop/joke-dataset/raw/master/reddit_jokes.json"
+        cmd = ['wget', url]
+        subprocess.call(cmd)
     with open('reddit_jokes.json', 'r') as f:
         data = json.loads(f.read())
 
