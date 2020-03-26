@@ -2,9 +2,7 @@
 # -*- coding: utf-8 -*-
 import gpt_2_simple as gpt2
 import os
-import json
 import sys
-import subprocess
 
 model_name = "345M"
 
