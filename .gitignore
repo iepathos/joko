@@ -2,3 +2,5 @@ models/
 samples/
 checkpoint/
 reddit_jokes.json
+reddit_jokes.txt
+standup.txt
