@@ -1,6 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import os
+import json
+import subprocess
+
+
 def remove_empty_lines(filename):
     """Overwrite the file, removing empty lines and lines that contain only whitespace."""
     with open(filename, 'r+') as f:
