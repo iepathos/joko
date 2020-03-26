@@ -24,4 +24,7 @@ def train(filename):
 if __name__ == '__main__':
     download_model()
     args = sys.argv[1:]
+    if len(args) != 1:
+        print('The .txt to train joko on is a required arg for train.py')
+        sys.exit(1)
     train(args[0])
