@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# -8- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 
 import warnings
 warnings.filterwarnings('ignore', category=FutureWarning)
